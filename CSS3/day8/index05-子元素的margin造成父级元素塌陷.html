@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .one {
+        width: 500px;
+        height: 500px;
+        background-color: rgba(255, 0, 0, 0.53);
+        margin: 100px auto;
+        border-top: 1px solid black;
+        /* padding-top: 40px; */
+        /* overflow: hidden; */
+      }
+      .two {
+        /* 边框影响宽度和高度 */
+        width: 280px;
+        height: 280px;
+        border: 10px solid skyblue;
+        margin: 100px;
+      }
+      /*
+        子元素对父级元素造成塌陷 解决办法
+        1. 给父级添加上边框
+        2. 给父级添加内边距(padding) 内边距会影响宽高 需设置父元素减去内边距宽高
+        3. 给父元素设置 overflow:hidden;
+       */
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="two"></div>
+    </div>
+  </body>
+</html>

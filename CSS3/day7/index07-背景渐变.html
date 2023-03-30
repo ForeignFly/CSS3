@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        width: 100%;
+        height: 1000px;
+        /* 线性渐变linear 第一个参数渐变方向 默认从上至下 */
+        background: linear-gradient(
+          to top,
+          red,
+          rgb(255, 68, 68),
+          rgb(255, 139, 139)
+        );
+        /* 径向渐变radial 可以设置百分比 颜色与百分比之间空格隔开 */
+        background: radial-gradient(red, black 80%);
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

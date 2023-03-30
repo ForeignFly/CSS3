@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style: none;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        border: 2px solid red;
+        /* 调用动画:名称 完成动画时间 什么速度播放 延迟时间 播放次数 反向播放 */
+        /* 例:load 2s linear 0s infinite alternate */
+        /* forwards 让动画停在最后一帧 加入infinite不生效 */
+        /* alternate 让动画反向运动 */
+        animation: i 5s;
+      }
+      /* 动画关键帧 后面跟名字 */
+      /* 在需要调用的属性值里加 animation:名字 */
+      @keyframes i {
+        /* 0% 从哪一时间开始动 */
+        50% {
+          width: 200px;
+        }
+        100% {
+          width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

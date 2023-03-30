@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      ul {
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        margin: 100px auto;
+      }
+      ul li {
+        list-style-type: none;
+        padding: 10px 10px;
+        /* float: left; */
+        margin-right: 10px;
+      }
+      /* first-of-type 先看类型再看位置 */
+      /* 选择第一个p */
+      p:first-of-type {
+        background-color: red;
+      }
+      /* 选择最后一个p */
+      p:last-of-type {
+        background-color: green;
+      }
+      /* 选择第四个p标签 */
+      p:nth-child(4) {
+        /* 不会更改样式 nth-child先看位置 再看类型 也就是说第四个是div 但是对应不上它的p属性 所以不变色 */
+        background-color: blue;
+      }
+      p:nth-of-type(4) {
+        /* 会更改样式 nth-of-type 先看类型 再看位置 看第四个是div所以跳过div 选择第四个p 变色  */
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>第1个p</p>
+    <p>第2个p</p>
+    <p>第3个p</p>
+    <div>div</div>
+    <p>第4个p</p>
+    <p>第5个p</p>
+    <p>第6个p</p>
+    <div>div</div>
+    <p>第7个p</p>
+    <p>第8个p</p>
+  </body>
+</html>

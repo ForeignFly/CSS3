@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      li {
+        list-style: none;
+      }
+      .box {
+        width: 400px;
+        height: 300px;
+        background-color: skyblue;
+        margin: 0 auto;
+        position: relative;
+      }
+      .left {
+        position: absolute;
+        left: 0px;
+        top: 45%;
+      }
+      .left a {
+        display: block;
+        width: 30px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        line-height: 40px;
+      }
+      .right {
+        position: absolute;
+        right: 0px;
+        top: 45%;
+      }
+      .right a {
+        display: block;
+        width: 30px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        line-height: 40px;
+      }
+      .left a:hover {
+        background-color: rgba(0, 0, 0, 1);
+      }
+      .right a:hover {
+        background-color: rgba(0, 0, 0, 1);
+      }
+      .box ul {
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+      }
+      .box ul li {
+        width: 10px;
+        height: 10px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin: 0px 5px;
+        float: left;
+      }
+      .box ul li:first-of-type {
+        background-color: #fff;
+      }
+      .box ul li:hover {
+        background-color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="left"><a href="#">&lt;</a></div>
+      <div class="right"><a href="#">&gt;</a></div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
+</html>

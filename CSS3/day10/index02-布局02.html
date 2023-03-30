@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style: none;
+      }
+      .box {
+        width: 1226px;
+        height: 614px;
+        background-color: rgba(255, 192, 203, 0.734);
+        margin: 0 auto;
+      }
+      .box .left {
+        width: 234px;
+        height: 614px;
+        background-color: rgba(123, 255, 255, 0.664);
+        float: left;
+      }
+      .box .right {
+        width: 978px;
+        height: 614px;
+        background-color: rgba(255, 0, 0, 0.563);
+        float: right;
+      }
+      .box .right ul li {
+        width: 234px;
+        height: 300px;
+        background-color: rgba(255, 228, 196, 0.653);
+        float: left;
+        margin-right: 14px;
+        margin-bottom: 14px;
+      }
+      .box .right ul .NoMr {
+        margin-right: 0px;
+      }
+      .top,
+      .bottom {
+        width: 234px;
+        height: 143px;
+        background-color: rgba(199, 199, 255, 0.703);
+        margin-bottom: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="left"></div>
+      <div class="right">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li class="NoMr">4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li class="NoMr">
+            <div class="top">top</div>
+            <div class="bottom">bottom</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

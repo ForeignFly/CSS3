@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      li {
+        list-style: none;
+      }
+      .box {
+        width: 426px;
+        height: 130px;
+        background-color: skyblue;
+        border-radius: 15px;
+        margin: 100px auto;
+        position: relative;
+        background: url(imgs/微信图片_20230309143815.jpg) no-repeat;
+      }
+      .box ul {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+      }
+      .box ul li {
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+        background-color: #fff;
+        float: left;
+        margin: 0px 5px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+      }
+      .box ul li:first-of-type {
+        background-color: #000;
+        border: 1px solid white;
+        color: white;
+      }
+      .box ul li:hover {
+        cursor: pointer;
+        background-color: #000;
+        border: 1px solid white;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
+  </body>
+</html>

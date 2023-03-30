@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .box {
+        width: 1200px;
+        /* 1.给父元素添加高度，但是需要手动去调整，后期代码很多会很乱 */
+        /* height: 200px; */
+        background-color: pink;
+        margin: 0 auto;
+        /* 2.给父元素添加overflow:hidden; 但是有下拉列表的情况下会隐藏掉下拉列表 */
+        /* overflow: hidden; */
+      }
+      /* 3.在最后面添加一个空盒子 使用clear:both 清除浮动 但是会造成代码冗余 */
+      /* .clear {
+        clear: both;
+      } */
+      /* 4.给父级添加伪类:after 没有副作用 就是麻烦点 */
+      .box:after {
+        clear: both;
+        content: "";
+        display: block;
+      }
+      .left {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        float: left;
+      }
+      .right {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="left"></div>
+      <div class="right"></div>
+      <!-- <div class="clear"></div> -->
+    </div>
+  </body>
+</html>

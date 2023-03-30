@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        选择器的优先级
+        标签选择器(例如p)<类选择器(例如.nav)<ID选择器(#nav)
+        ID选择器(#nav)>类选择器(例如.nav)>标签选择器(例如p)
+      */
+      .one {
+        color: red;
+      }
+      #one {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one" id="one">
+      <p>我是p标签</p>
+    </div>
+  </body>
+</html>

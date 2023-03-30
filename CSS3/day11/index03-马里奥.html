@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>马里奥</title>
+    <link rel="icon" href="imgs/Mushroom.ico" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .box {
+        width: 240px;
+        height: 320px;
+        background-color: #fff;
+        /* border: 1px solid #666; */
+        margin: 0 auto;
+        position: relative;
+      }
+      .box1 {
+        width: 120px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 60px;
+      }
+      .box2 {
+        width: 200px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 40px;
+        top: 20px;
+      }
+      .box3 {
+        width: 140px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+      }
+      .box4 {
+        width: 40px;
+        height: 20px;
+        background-color: #ffc000;
+        position: absolute;
+        left: 100px;
+        top: 40px;
+      }
+      .box5 {
+        width: 20px;
+        height: 20px;
+        background-color: #ffc000;
+        position: absolute;
+        left: 160px;
+        top: 40px;
+      }
+      .box6 {
+        width: 200px;
+        height: 20px;
+        background-color: #ffc000;
+        position: absolute;
+        left: 20px;
+        top: 60px;
+      }
+      .box7 {
+        width: 20px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 20px;
+        top: 60px;
+      }
+      .box8 {
+        width: 20px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 60px;
+        top: 60px;
+      }
+      .box9 {
+        width: 20px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 140px;
+        top: 60px;
+      }
+      .box10 {
+        width: 220px;
+        height: 20px;
+        background-color: #ffc000;
+        position: absolute;
+        left: 20px;
+        top: 80px;
+      }
+      .box11 {
+        width: 20px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 20px;
+        top: 80px;
+      }
+      .box12 {
+        width: 40px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 60px;
+        top: 80px;
+      }
+      .box13 {
+        width: 20px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 160px;
+        top: 80px;
+      }
+      .box14 {
+        width: 200px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 20px;
+        top: 100px;
+      }
+      .box15 {
+        width: 80px;
+        height: 20px;
+        background-color: #ffc000;
+        position: absolute;
+        left: 60px;
+        top: 100px;
+      }
+      .box16 {
+        width: 140px;
+        height: 20px;
+        background-color: #ffc000;
+        position: absolute;
+        left: 60px;
+        top: 120px;
+      }
+      .box17 {
+        width: 140px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 40px;
+        top: 140px;
+      }
+      .box18 {
+        width: 20px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 80px;
+        top: 140px;
+      }
+      .box19 {
+        width: 20px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 140px;
+        top: 140px;
+      }
+      .box20 {
+        width: 200px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 20px;
+        top: 160px;
+      }
+      .box21 {
+        width: 20px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 80px;
+        top: 160px;
+      }
+      .box22 {
+        width: 20px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 140px;
+        top: 160px;
+      }
+      .box23 {
+        width: 240px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 0px;
+        top: 180px;
+      }
+      .box24 {
+        width: 80px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 80px;
+        top: 180px;
+      }
+      .box25 {
+        width: 240px;
+        height: 20px;
+        background-color: #ffc000;
+        position: absolute;
+        left: 0px;
+        top: 200px;
+      }
+      .box26 {
+        width: 20px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 40px;
+        top: 200px;
+      }
+      .box27 {
+        width: 20px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 60px;
+        top: 200px;
+      }
+      .box28 {
+        width: 40px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+      }
+      .box29 {
+        width: 20px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 160px;
+        top: 200px;
+      }
+      .box30 {
+        width: 20px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 180px;
+        top: 200px;
+      }
+      .box31 {
+        width: 240px;
+        height: 20px;
+        background-color: #ffc000;
+        position: absolute;
+        left: 0px;
+        top: 220px;
+      }
+      .box32 {
+        width: 120px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 60px;
+        top: 220px;
+      }
+      .box33 {
+        width: 240px;
+        height: 20px;
+        background-color: #ffc000;
+        position: absolute;
+        left: 0px;
+        top: 240px;
+      }
+      .box34 {
+        width: 160px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 40px;
+        top: 240px;
+      }
+      .box35 {
+        width: 160px;
+        height: 20px;
+        background-color: #fe0000;
+        position: absolute;
+        left: 40px;
+        top: 260px;
+      }
+      .box36 {
+        width: 40px;
+        height: 20px;
+        background-color: #fff;
+        position: absolute;
+        left: 100px;
+        top: 260px;
+      }
+      .box37 {
+        width: 160px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 40px;
+        top: 280px;
+      }
+      .box38 {
+        width: 40px;
+        height: 20px;
+        background-color: #fff;
+        position: absolute;
+        left: 100px;
+        top: 280px;
+      }
+      .box39 {
+        width: 200px;
+        height: 20px;
+        background-color: #984809;
+        position: absolute;
+        left: 20px;
+        top: 300px;
+      }
+      .box40 {
+        width: 40px;
+        height: 20px;
+        background-color: #fff;
+        position: absolute;
+        left: 100px;
+        top: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+      <div class="box6"></div>
+      <div class="box7"></div>
+      <div class="box8"></div>
+      <div class="box9"></div>
+      <div class="box10"></div>
+      <div class="box11"></div>
+      <div class="box12"></div>
+      <div class="box13"></div>
+      <div class="box14"></div>
+      <div class="box15"></div>
+      <div class="box16"></div>
+      <div class="box17"></div>
+      <div class="box18"></div>
+      <div class="box19"></div>
+      <div class="box20"></div>
+      <div class="box21"></div>
+      <div class="box22"></div>
+      <div class="box23"></div>
+      <div class="box24"></div>
+      <div class="box25"></div>
+      <div class="box26"></div>
+      <div class="box27"></div>
+      <div class="box28"></div>
+      <div class="box29"></div>
+      <div class="box30"></div>
+      <div class="box31"></div>
+      <div class="box32"></div>
+      <div class="box33"></div>
+      <div class="box34"></div>
+      <div class="box35"></div>
+      <div class="box36"></div>
+      <div class="box37"></div>
+      <div class="box38"></div>
+      <div class="box39"></div>
+      <div class="box40"></div>
+    </div>
+  </body>
+</html>

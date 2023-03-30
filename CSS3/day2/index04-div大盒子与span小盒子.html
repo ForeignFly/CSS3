@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* width 设置盒子的宽度 height 设置盒子的高度 */
+      /* background-color 设置盒子的背景色 */
+      .div1 {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        color: blue;
+      }
+      .div2 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+      }
+      .div3_span_one {
+        color: red;
+      }
+      .div3_span_two {
+        color: green;
+      }
+      .color_pink {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 如果要起多个类名 则类名与类名之间需要用 " 空格 " 隔开 -->
+    <!-- class 类名必须要与 css 样式的类名一致 -->
+    <div class="div1 color_pink">
+      <p>我是p标签</p>
+    </div>
+    <div class="div2 color_pink">
+      <p>我是p标签</p>
+    </div>
+    <div class="div1">
+      <p>我是p标签</p>
+    </div>
+    <hr />
+    <div class="div3">
+      <span class="div3_span_one"> 这是前半段内容 </span>
+      <span class="div3_span_two"> 这是后半段内容 </span>
+    </div>
+  </body>
+</html>
+<!-- 
+  div:
+  块级标签 独占一行
+  可以设置宽高
+
+  span:
+  行内标签 左右都是行内元素可以排列在一行
+  内容撑开宽度
+  不能设置宽高
+ -->

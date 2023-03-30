@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 父级选择器 */
+      /* 后代选择器选择当前父级下的所有后代标签 */
+      /* ol 下的 li 下的 p下的 标签 设置红色 */
+      ol li p {
+        color: red;
+      }
+      /* ol 下的 li 下的 div下的 标签 设置绿色 */
+      ol li div {
+        color: green;
+      }
+      /* ul 下的 li 下的 p下的 标签 设置蓝色 */
+      ul li p {
+        color: blue;
+      }
+      /* ul 下的 li 下的 div下的 标签 设置黄色 */
+      ul li div {
+        color: yellow;
+      }
+      /* 权重问题 */
+      /* Id选择器的权重是大于类选择器的 所以显示红色 */
+      .s_ul #one {
+        color: red;
+      }
+      .s_ul .one {
+        color: blue;
+      }
+      /* 
+        标签选择器的权重为1
+        类选择器的权重为10
+        ID选择器的权重为100
+     */
+      /* 标签选择器权重最小 */
+      .s_ul li {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 有序列表 -->
+    <h1>有序列表</h1>
+    <ol>
+      <li>
+        <p>有序列表的p</p>
+      </li>
+      <li>
+        <div>有序列表的div</div>
+      </li>
+    </ol>
+    <hr />
+    <!-- 无序列表 -->
+    <h1>无序列表</h1>
+    <ul>
+      <li>
+        <p>无序列表的p</p>
+      </li>
+      <li>
+        <div>无序列表的div</div>
+      </li>
+    </ul>
+    <hr />
+    <!-- 权重问题 -->
+    <h1>权重问题</h1>
+    <ul class="s_ul">
+      <li class="one" id="one">666</li>
+    </ul>
+  </body>
+</html>

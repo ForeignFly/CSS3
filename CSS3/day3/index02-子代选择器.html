@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/style01.css" /> -->
+    <title>Document</title>
+    <!-- 内部样式表 -->
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      /* 子集选择器选择当前父级下的所有子标签 孙子辈不选 */
+      .one > ul {
+        background-color: red;
+      }
+      .one > div {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <ul>
+        <li>这是第1个li</li>
+        <li>这是第2个li</li>
+        <li>这是第3个li</li>
+      </ul>
+      <div>
+        <ol class="two">
+          <li>这是第1个li</li>
+          <li>这是第2个li</li>
+          <li>这是第3个li</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        list-style: none;
+      }
+      .text {
+        width: 520px;
+        height: 100px;
+        background-color: #000;
+        border-radius: 10px;
+        margin: 100px auto;
+        color: white;
+        font-size: 38px;
+        text-align: center;
+        line-height: 100px;
+        /* 设置透明度 */
+        /* 0~1 0是完全透明 1是完全不透明 */
+        opacity: 0.4;
+      }
+      .text:hover {
+        /* 鼠标悬浮到.text上 由opacity:0.4;变为0.5; */
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">今天非常热</div>
+  </body>
+</html>

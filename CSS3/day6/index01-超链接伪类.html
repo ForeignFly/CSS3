@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 去除超链接下划线 颜色为黑色 */
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      /* 超链接没有点击过的状态 */
+      a:link {
+        color: black;
+      }
+      /* 超链接点击后的状态 */
+      a:visited {
+        color: orange;
+      }
+      /* 悬浮超链接状态 */
+      a:hover {
+        color: red;
+      }
+      /* 鼠标点击不松开超链接状态 */
+      a:active {
+        color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">点击过的超链接</a>
+    <br />
+    <a href="www.baidu.com">没点过的超链接</a>
+  </body>
+</html>

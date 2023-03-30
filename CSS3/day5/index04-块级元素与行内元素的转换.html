@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+      }
+      .div1 {
+        /* display属性 转换元素 */
+        /* 
+            inline 行内元素
+            block 块元素
+            inline-block 行内块元素 
+         */
+        display: inline;
+      }
+      span {
+        background-color: red;
+      }
+      .span1 {
+        /* 转换后 独占一行 可以设置宽高 */
+        display: block;
+        width: 100px;
+        height: 100px;
+      }
+      .div2 {
+        /* 行内块 可以设置宽高 可以并排在一行 */
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>我是没转换的div</div>
+    <div class="div1">我是转换后的div</div>
+    <div class="div1">我是转换后的div</div>
+    <span>我是没转换的span</span>
+    <span class="span1">我是转换后的span</span>
+    <div class="div2">我是div-行内块</div>
+    <div class="div2">我是div-行内块</div>
+  </body>
+</html>

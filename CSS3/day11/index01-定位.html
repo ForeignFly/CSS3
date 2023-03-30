@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        height: 2000px;
+      }
+      .box1 {
+        /* 定位的默认属性 无任何效果 */
+        position: static;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+      }
+      .box2 {
+        /* 固定定位 添加此属性滚动页面不会移动 */
+        position: fixed;
+        left: 100px;
+        top: 100px;
+        width: 165px;
+        height: 145px;
+        background: url(imgs/r_dj.png) no-repeat;
+        padding-top: 38px;
+        padding-left: 20px;
+        color: white;
+        font-size: 12px;
+      }
+      .box3 {
+        /* 相对定位 相对自身位置进行移动 */
+        /* 此定位不会脱离基本文档流 对父级盒子和相邻盒子都没有任何影响 */
+        /* 移动相对定位元素，但它原本所占的空间不会改变 */
+        /* 设置相对定位的盒子位置会被保留下来 */
+        position: relative;
+        left: 200px;
+        top: 250px;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        text-align: center;
+        color: white;
+      }
+      .box4 {
+        /* 绝对定位 相对于最近的已定位父元素 */
+        /* 此定位会脱离基本文档流 */
+        /* absolute 定位的元素和其他元素重叠 */
+        position: absolute;
+        left: 500px;
+        top: 550px;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        text-align: center;
+        color: white;
+      }
+      .box3_son {
+        /* box3的儿子 */
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        color: white;
+        font-size: 12px;
+        /* 给box3的孩子添加绝对定位 会在box3 内进行定位 因为box3设置了position:relative */
+        position: absolute;
+        left: 20px;
+        top: 20px;
+      }
+      .box5 {
+        /* 粘性定位 top值必须写 低版本浏览器不兼容 */
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        height: 40px;
+        background-color: skyblue;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">默认</div>
+    <div class="box2">固定定位<br />滚动不会移动</div>
+    <div class="box3">
+      相对定位
+      <div class="box3_son">相对定位里的绝对定位</div>
+    </div>
+    <div class="box4">绝对定位</div>
+    <div class="box5">粘性定位</div>
+  </body>
+</html>

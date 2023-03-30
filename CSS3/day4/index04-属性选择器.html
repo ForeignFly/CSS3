@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        margin: 0px;
+        padding: 0px;
+      } */
+      /* 属性相对应 */
+      a[href] {
+        background-color: blue;
+      }
+      /* 属性与属性值相对应 */
+      a[href="#"] {
+        color: red;
+      }
+      /* 属性与属性值的首字母相对应 */
+      a[href^="j"] {
+        background-color: yellow;
+      }
+      /* 属性与属性值的末尾字母相对应 */
+      a[href$="u"] {
+        background-color: green;
+      }
+      /* 属性与属性值的字符有一个一样的就可以改变样式 */
+      a[href*="d"] {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">1</a>
+    <a href="http://www.baidu.com">2</a>
+    <a href="http://www.jd.com">3</a>
+    <a href="#">4</a>
+  </body>
+</html>
